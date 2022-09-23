@@ -11,21 +11,21 @@ class persona:
     
 class soldado (persona):
     def atacar (self, objetivo):
-        vidae.vida= enemigo.vida - [0,0.25]
+        aliado.vida= enemigo.vida - [0,0.25]
 
 class enemigo (persona):
     def atacar (self, objetivo):
-        vidae.vida= aliado.vida - [0,0.25]
+        enemigo.vida= aliado.vida - [0,0.25]
 
 class medico (persona):
     def cuarar(self, objetivo):
-        vida.vida = aliado.vida + [0,0.25]
+        aliado.vida = aliado.vida + [0,0.25]
         print('vida del soldado', aliado.vida)
 
 class medicoe (persona):
     def cuarar(self, objetivo):
-        vida.vida = aliado.vida + [0,0.25]
-        print('vida del soldado', aliado.vida)
+        enemigo.vida = enemigo.vida + [0,0.25]
+        print('vida del soldado', enemigo.vida)
 
 class death (soldado):
     def muerto (self, vida):
@@ -55,21 +55,20 @@ print('-------------------------------------------------------------------------
 print ('menu')
 print ('1 atacar a los enemigos ')#alatque 
 print ('2 los enemigos atacan')
+print ('3 curar a los aliados')
 print ('0000 rendicion')
 # turnos 
 selector = input()
 # menu
 if selector == 000:
-    aliado
+    exit()
 
 if selector == 1:
-    medico
+    soldado()
 
 if selector == 2:
-     
+    enemigo()
+    medicoe()
 
 if selector == 3:
-   
-
-if selector == 4:
-       
+    medico()

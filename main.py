@@ -49,8 +49,6 @@ En4 = medicoe()
 aliado  = [al1, al2, al3, al4]
 enemigo = [En1, En2, En3, En4]
 
-vida = 0
-vidae= 0
 print('--------------------------------------------------------------------------------------------------------------------------------')
 print ('menu')
 print ('1 atacar a los enemigos ')#alatque 
@@ -72,3 +70,9 @@ if selector == 2:
 
 if selector == 3:
     medico()
+
+if aliado.vida() == 0:
+    print ('GAME OVER')
+
+if enemigo.vida() == 0:
+    print ('YOU WINS')

@@ -13,12 +13,20 @@ class soldado (persona):
     def atacar (self, objetivo):
         vidae.vida= enemigo.vida - [0,0.25]
 
+class enemigo (persona):
+    def atacar (self, objetivo):
+        vidae.vida= aliado.vida - [0,0.25]
+
 class medico (persona):
     def cuarar(self, objetivo):
         vida.vida = aliado.vida + [0,0.25]
         print('vida del soldado', aliado.vida)
-class actividades(persona):
-    def soldado (self,)
+
+class medicoe (persona):
+    def cuarar(self, objetivo):
+        vida.vida = aliado.vida + [0,0.25]
+        print('vida del soldado', aliado.vida)
+
 class death (soldado):
     def muerto (self, vida):
         if enemigo.vida == 0:
@@ -33,65 +41,35 @@ al3 = soldado()
 al4 = medico()
 
 #BANDO Enemigo
-En1 = soldado()
-En2 = soldado()
-En3 = soldado()
-En4 = medico()
+En1 = enemigo()
+En2 = enemigo()
+En3 = enemigo()
+En4 = medicoe()
+
+aliado  = [al1, al2, al3, al4]
+enemigo = [En1, En2, En3, En4]
 
 vida = 0
 vidae= 0
-
-print ('la vida del aliado es:', al1)
-print ('la vida del aliado es:', al2)
-print ('la vida del aliado es:', al3)
-print ('la vida del medico aliado es:', al4)
-print ('la vida del enemigo es:', En1)
-print ('la vida del enemigo es:', En2)
-print ('la vida del enemigo es:', En3)
-print ('la vida del meico enemigo es:', En4)
-
+print('--------------------------------------------------------------------------------------------------------------------------------')
 print ('menu')
-print ('1')#alatque 
-print ('2')
-print ('3')
-print ('4')
-print ('5')
-print ('6')
-print ('7')
-print ('8')
-print ('9')
-print ('10')
-print ('0000')
-
+print ('1 atacar a los enemigos ')#alatque 
+print ('2 los enemigos atacan')
+print ('0000 rendicion')
+# turnos 
+selector = input()
+# menu
 if selector == 000:
-    soldados2 = soldados2 + medicos
+    aliado
 
 if selector == 1:
-    soldados2 = soldados2 + medicos
+    medico
 
 if selector == 2:
-    soldados = soldados - guerra 
+     
 
 if selector == 3:
-    soldados2 = soldados2 - guerra
+   
 
 if selector == 4:
-    soldados = soldados + medicos 
-
-if selector == 5:
-    soldados2 = soldados2 + medicos
-
-if selector == 6:
-    soldados2 = soldados2 + medicos
-
-if selector == 7:
-    soldados2 = soldados2 + medicos
-
-if selector == 8:
-    soldados2 = soldados2 + medicos
-
-if selector == 9:
-    soldados2 = soldados2 + medicos
-
-if selector == 10:
-    soldados2 = soldados2 + medicos
+       

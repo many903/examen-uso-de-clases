@@ -48,7 +48,7 @@ print ('la vida del medico aliado es:', al4)
 print ('la vida del enemigo es:', En1)
 print ('la vida del enemigo es:', En2)
 print ('la vida del enemigo es:', En3)
-print ('la vida del meico enemigo es:', En4
+print ('la vida del meico enemigo es:', En4)
 
 print ('menu')
 print ('1')#alatque 

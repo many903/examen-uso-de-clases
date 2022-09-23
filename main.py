@@ -37,7 +37,7 @@ class death (soldado):#terminacion del juego
             print ('YOU WINS')
             exit()
 
-print ('esta funcionando')
+print ('esta funcionando') #PRUEVA DE FUNCIONAMIENTO
 
 #BANDO Aliados 
 al1 = soldado()
@@ -90,5 +90,5 @@ if enemigo.vida() == 0:
 
 # HE TRATADO DE LLEGAR A LAS 100 LINEAS PROFE NO HE PODIDO
 # PERO EL CODIGO ES FUNCIONAL JEJEJEJEJEJE
-# Y NO HEMOS LLEVADO PROGRAMCION ORIENTADA A OBJETOS >_<
+# NO HEMOS LLEVADO PROGRAMCION ORIENTADA A OBJETOS >_<
 # Y PASEME CON MB
